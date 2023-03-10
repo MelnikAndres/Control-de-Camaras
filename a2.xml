@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\andre\OneDrive\Escritorio\Java\CamarasRama\out\artifacts\CamarasRama_jar\CamarasRama.jar</jar>
+  <outfile>C:\Users\andre\OneDrive\Escritorio\Java\CamarasRama\out\artifacts\CamarasRama_jar\prueba.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine>java --module-path javafx-sdk-19/lib --add-modules javafx.fxml,javafx.controls,javafx.graphics,javafx.web -jar CamarasRama.jar</cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\andre\OneDrive\Escritorio\Java\CamarasRama\out\artifacts\CamarasRama_jar\camara.ico</icon>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>

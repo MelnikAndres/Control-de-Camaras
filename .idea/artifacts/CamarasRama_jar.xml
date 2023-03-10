@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CamarasRama:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CamarasRama_jar</output-path>
+    <root id="archive" name="CamarasRama.jar">
+      <element id="module-output" name="CamarasRama" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.9.0/commons-csv-1.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Descargas/jackson/lib/jackson-annotations-2.14.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Descargas/jackson/lib/jackson-core-2.14.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Descargas/jackson/lib/jackson-databind-2.14.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Descargas/jackson/lib/jackson-dataformat-csv-2.14.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

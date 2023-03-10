@@ -1,0 +1,3 @@
+actividad,id,ip,latitud,localidad,longitud,perdida,servidor,tipo,ubicacion,zcomentario
+"NO OPERATIVA",0,192.168.0.0,-34.58932495787704,"MARTÍN CORONADO",-58.5908402331321,100,random,Fija,"plaza martin coronado",
+"NO OPERATIVA",1,192.168.0.1,-34.576380023407516,"VILLA BOSCH",-58.588563037681155,0,random,Fija,3213122,

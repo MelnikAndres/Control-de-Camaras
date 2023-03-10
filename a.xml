@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>true</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>Ejecutor.jar</jar>
+  <outfile>C:\Users\andre\OneDrive\Escritorio\Java\CamarasRama\out\artifacts\CamarasRama_jar\Camaras.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\andre\OneDrive\Escritorio\Java\CamarasRama\out\artifacts\CamarasRama_jar\camara.ico</icon>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0.0.0</txtFileVersion>
+    <fileDescription>Creado por Melnik Andres </fileDescription>
+    <copyright>Melnik Andres </copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0.0.0</txtProductVersion>
+    <productName>Camaras</productName>
+    <companyName>MelnikAndres </companyName>
+    <internalName>Camaras</internalName>
+    <originalFilename>Camaras.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>SPANISH_MEXICO</language>
+  </versionInfo>
+  <messages>
+    <startupErr>Ocurrió un error inesperado.</startupErr>
+    <jreNotFoundErr>Esta aplicacion requiere de Java SE Development Kit 19.0.2</jreNotFoundErr>
+    <jreVersionErr>Esta aplicacion requiere de Java SE Development Kit 19.0.2</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>

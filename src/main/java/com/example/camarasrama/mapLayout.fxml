@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane fx:id="baseAnchor" prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.camarasrama.Main">
+   <children>
+      <BorderPane fx:id="baseBorder" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="600.0">
+         <center>
+            <StackPane alignment="TOP_LEFT" minHeight="0.0" minWidth="0.0">
+               <children>
+                   <WebView fx:id="visorMapa" prefHeight="-1.0" prefWidth="-1.0" BorderPane.alignment="TOP_LEFT">
+                       <BorderPane.margin>
+                           <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                       </BorderPane.margin>
+                     <StackPane.margin>
+                        <Insets bottom="-10.0" left="-10.0" right="-10.0" top="-10.0" />
+                     </StackPane.margin></WebView>
+                  <Slider fx:id="zoomer" blockIncrement="1.0" majorTickUnit="2.0" max="18.0" maxHeight="-Infinity" min="14.0" minWidth="0.0" minorTickCount="2" nodeOrientation="LEFT_TO_RIGHT" opacity="0.8" orientation="VERTICAL" prefHeight="150.0" showTickMarks="true">
+                     <StackPane.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </StackPane.margin>
+                  </Slider>
+                  <Circle fx:id="circuloAgregar" fill="#e1e1e1" opacity="0.8" radius="20.0" stroke="#e1e1e1" strokeType="INSIDE">
+                     <StackPane.margin>
+                        <Insets left="54.0" top="55.0" />
+                     </StackPane.margin></Circle>
+                  <ImageView fx:id="botonIconos" fitHeight="150.0" fitWidth="30.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/iconos/mas.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets left="60.0" top="60.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <GridPane fx:id="gridIconos" maxHeight="192.0" maxWidth="32.0" opacity="0.8" prefHeight="192.0" style="-fx-background-color: #F0F0F0;" visible="false">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="32.0" minWidth="32.0" prefWidth="32.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="2.0" minHeight="2.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="2.0" minHeight="2.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="2.0" minHeight="2.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="2.0" minHeight="2.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="2.0" minHeight="2.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <StackPane.margin>
+                        <Insets left="58.0" top="105.0" />
+                     </StackPane.margin>
+                     <children>
+                        <ImageView fx:id="iconoFija" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/iconos/FijaTemp.png" />
+                           </image></ImageView>
+                        <ImageView fx:id="iconoDomo" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../../../../resources/iconos/DomoTemp.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="iconoSwitch" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../../../../resources/iconos/SwitchTemp.png" />
+                           </image></ImageView>
+                        <ImageView fx:id="iconoRadio" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../../../../resources/iconos/Radio%20enlaceTemp.png" />
+                           </image></ImageView>
+                        <ImageView fx:id="iconoLPR" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../../../../resources/iconos/LPRTemp.png" />
+                           </image></ImageView>
+                        <ImageView fx:id="iconoParada" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="10">
+                           <image>
+                              <Image url="@../../../../resources/iconos/Parada%20SeguraTemp.png" />
+                           </image></ImageView>
+                        <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                        <Separator prefWidth="200.0" GridPane.rowIndex="3" />
+                        <Separator prefWidth="200.0" GridPane.rowIndex="5" />
+                        <Separator prefWidth="200.0" GridPane.rowIndex="7" />
+                        <Separator prefWidth="200.0" GridPane.rowIndex="9" />
+                     </children>
+                  </GridPane>
+               </children></StackPane>
+         </center>
+         <right>
+             <StackPane maxHeight="1.7976931348623157E308" maxWidth="0.0" minWidth="0.0" prefWidth="0.0">
+               <GridPane fx:id="gridLista" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="0.0" StackPane.alignment="TOP_CENTER">
+                 <columnConstraints>
+                   <ColumnConstraints />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                   <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="401.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                       <ListView fx:id="visorCamaras" maxHeight="1.7976931348623157E308" maxWidth="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <padding>
+                               <Insets left="-300.0" />
+                           </padding>
+                     </ListView>
+                     <ToggleButton fx:id="toggleHide" minWidth="20.0" mnemonicParsing="false" prefWidth="20.0" translateX="-300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                        <graphic>
+                           <ImageView fx:id="toggleHideImage" fitHeight="18.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8">
+                              <image>
+                                 <Image url="@../../../../resources/iconos/right.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                        <GridPane.margin>
+                           <Insets />
+                        </GridPane.margin>
+                     </ToggleButton>
+                     <Rectangle fx:id="cuadradoRelleno" fill="#ebebeb80" height="25.0" stroke="#bdbdbd00" strokeType="INSIDE" strokeWidth="0.0" width="300.0" GridPane.halignment="RIGHT">
+                        <GridPane.margin>
+                           <Insets left="-300.0" />
+                        </GridPane.margin>
+                     </Rectangle>
+                     <TextField fx:id="buscadorCamaras" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="1.0" prefWidth="1.0" promptText=" Buscar..." GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                        <padding>
+                           <Insets left="-300.0" />
+                        </padding>
+                        <GridPane.margin>
+                           <Insets />
+                        </GridPane.margin>
+                     </TextField>
+                  </children>
+               </GridPane>
+             </StackPane>
+
+         </right>
+         <top>
+             <StackPane maxWidth="600.0" BorderPane.alignment="CENTER_LEFT">
+               <Rectangle fx:id="menuFiller" fill="#e3e3e380" height="25.0" stroke="#c9c9c9" strokeType="INSIDE" width="405.0" StackPane.alignment="BOTTOM_LEFT">
+                  <StackPane.margin>
+                     <Insets bottom="-25.0" />
+                  </StackPane.margin>
+               </Rectangle>
+                 <MenuBar fx:id="menuBar" prefHeight="0.0" BorderPane.alignment="CENTER">
+                     <menus>
+                         <Menu mnemonicParsing="false" text="Archivos">
+                             <MenuItem mnemonicParsing="false" text="Importar CSV" />
+                             <MenuItem mnemonicParsing="false" text="Exportar CSV" />
+                             <MenuItem mnemonicParsing="false" text="Guardar" />
+                         </Menu>
+                         <Menu mnemonicParsing="false" text="Camaras">
+                             <items>
+                                 <MenuItem mnemonicParsing="false" text="Agregar" />
+                             </items>
+                         </Menu>
+                         <Menu mnemonicParsing="false" text="Filtro">
+                             <items>
+                                 <Menu mnemonicParsing="false" text="Localidad">
+                                     <items>
+                                         <MenuItem mnemonicParsing="false" text="TODAS" />
+                                         <CheckMenuItem mnemonicParsing="false" text="CASEROS SUR" />
+                                         <CheckMenuItem mnemonicParsing="false" text="CASEROS NORTE" />
+                                         <CheckMenuItem mnemonicParsing="false" text="CHURRUCA" />
+                                         <CheckMenuItem mnemonicParsing="false" text="CIUDADELA" />
+                                         <CheckMenuItem mnemonicParsing="false" text="CIUDAD JARDIN" />
+                                         <CheckMenuItem mnemonicParsing="false" text="EL LIBERTADOR" />
+                                         <CheckMenuItem mnemonicParsing="false" text="JOSE INGENIEROS" />
+                                         <CheckMenuItem mnemonicParsing="false" text="LOMA HERMOSA" />
+                                         <CheckMenuItem mnemonicParsing="false" text="MARTIN CORONADO" />
+                                         <CheckMenuItem mnemonicParsing="false" text="PABLO PODESTA" />
+                                         <CheckMenuItem mnemonicParsing="false" text="REMEDIOS DE ESCALADA" />
+                                         <CheckMenuItem mnemonicParsing="false" text="SAENZ PEÑA" />
+                                         <CheckMenuItem mnemonicParsing="false" text="SANTOS LUGARES" />
+                                         <CheckMenuItem mnemonicParsing="false" text="VILLA BOSCH" />
+                                         <CheckMenuItem mnemonicParsing="false" text="VILLA RAFFO" />
+                                         <CheckMenuItem mnemonicParsing="false" text="11 DE SEPTIEMBRE" />
+                                     </items>
+                                 </Menu>
+                                 <Menu mnemonicParsing="false" text="Actividad">
+                                     <items>
+                                         <MenuItem mnemonicParsing="false" text="TODAS" />
+                                         <CheckMenuItem mnemonicParsing="false" text="NO OPERATIVA" />
+                                         <CheckMenuItem mnemonicParsing="false" text="INESTABLE " />
+                                         <CheckMenuItem mnemonicParsing="false" text="OPERATIVA" />
+                                     </items>
+                                 </Menu>
+                                 <Menu mnemonicParsing="false" text="Servidor" />
+                             </items>
+                         </Menu>
+                         <Menu mnemonicParsing="false" text="Ordenar">
+                             <items>
+                                 <MenuItem mnemonicParsing="false" text="Actividad" />
+                                 <MenuItem mnemonicParsing="false" text="Localidad" />
+                                 <MenuItem mnemonicParsing="false" text="Servidor" />
+                           <MenuItem mnemonicParsing="false" text="Ip" />
+                             </items>
+                         </Menu>
+                         <Menu mnemonicParsing="false" text="Utilidad">
+                             <items>
+                                 <MenuItem mnemonicParsing="false" text="FullScreen" />
+                                 <MenuItem mnemonicParsing="false" text="Ping a todo" />
+                             </items>
+                         </Menu>
+                         <Menu mnemonicParsing="false" text="Ayuda">
+                             <items>
+                                 <MenuItem mnemonicParsing="false" text="Tutorial" />
+                             </items>
+                         </Menu>
+                         <Menu mnemonicParsing="false" text="Graficos">
+                             <items>
+                                 <MenuItem mnemonicParsing="false" text="Grafico Porcentajes" />
+                                 <MenuItem mnemonicParsing="false" text="Estadisticas" />
+                             </items>
+                         </Menu>
+                     </menus>
+                     <padding>
+                         <Insets bottom="-25.0" />
+                     </padding>
+                 </MenuBar>
+             </StackPane>
+         </top>
+         <bottom>
+             <StackPane>
+                 <Rectangle fx:id="cuadradoIr" arcHeight="10.0" arcWidth="10.0" fill="#d0d0d080" height="25.0" stroke="#bfbfbf" strokeType="INSIDE" width="600.0" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                         <Insets top="-25.0" />
+                     </StackPane.margin>
+                 </Rectangle>
+                 <TextField fx:id="buscadorIr" maxWidth="600.0" prefHeight="0.0" promptText="Ir a..." StackPane.alignment="CENTER_LEFT">
+                     <padding>
+                         <Insets top="-25.0" />
+                     </padding>
+                     <StackPane.margin>
+                         <Insets />
+                     </StackPane.margin></TextField>
+             </StackPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

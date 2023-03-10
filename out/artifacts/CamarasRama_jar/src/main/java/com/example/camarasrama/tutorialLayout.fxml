@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Accordion fx:id="acordionPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <panes>
+    <TitledPane fx:id="listaPane" animated="false" prefWidth="900.0" text="Lista">
+      <content>
+        <AnchorPane fx:id="listaAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="898.0">
+               <children>
+                  <GridPane fx:id="listaGrid" layoutX="-1.0" layoutY="4.0" prefHeight="413.0" prefWidth="900.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="614.0" minWidth="10.0" prefWidth="614.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="445.0" minWidth="10.0" prefWidth="286.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="190.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="254.0" minHeight="10.0" prefHeight="199.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <image>
+                              <Image url="@../../../../resources/iconos/ListaContext.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="contextTutorial" text="label" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <ImageView fitHeight="150.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true" scaleX="1.3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <image>
+                              <Image url="@../../../../resources/iconos/ListaSize.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="resizeTutorial" text="Label" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                        <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="mapaPane" animated="false" text="Mapa">
+      <content>
+        <AnchorPane fx:id="mapaAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <GridPane fx:id="mapaGrid" prefHeight="474.0" prefWidth="898.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="659.0" minWidth="10.0" prefWidth="659.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="239.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="219.0" minHeight="10.0" prefHeight="219.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="217.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <image>
+                              <Image url="@../../../../resources/iconos/mapaIconos.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="tutorialIconos" text="Label" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <image>
+                              <Image url="@../../../../resources/iconos/mapaClick.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="tutorialIconoClick" text="Label" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                        <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="filtrosPane" animated="false" text="Filtros">
+      <content>
+        <AnchorPane fx:id="filtrosAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <GridPane fx:id="filtrosGrid" prefHeight="474.0" prefWidth="898.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="645.0" minWidth="10.0" prefWidth="645.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="253.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="199.0" minHeight="10.0" prefHeight="199.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="214.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                        <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="tutorialFiltro" text="Label" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tutorialBuscador" text="Label" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="175.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <image>
+                              <Image url="@../../../../resources/iconos/filtros.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <image>
+                              <Image url="@../../../../resources/iconos/buscador.PNG" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+      <TitledPane fx:id="agregarPane" animated="false" text="Agregar">
+        <content>
+          <AnchorPane fx:id="agregarAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <GridPane fx:id="agregarGrid" prefHeight="474.0" prefWidth="898.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="364.0" minHeight="10.0" prefHeight="257.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="153.0" minHeight="9.0" prefHeight="17.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="244.0" fitWidth="398.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <image>
+                              <Image url="@../../../../resources/iconos/agregar.PNG" />
+                           </image>
+                        </ImageView>
+                        <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                        <Label fx:id="tutorialAgregar" text="Label" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="-20.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane fx:id="servidoresPane" animated="false" text="Servidores">
+        <content>
+          <AnchorPane fx:id="servidoresAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <GridPane fx:id="servidoresGrid" prefHeight="474.0" prefWidth="898.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="556.0" minWidth="10.0" prefWidth="534.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="364.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="212.0" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="14.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="334.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                        <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ImageView fitHeight="41.0" fitWidth="413.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../../../../resources/iconos/servidores.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="tutorialServidor" text="Label" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="208.0" prefWidth="324.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="203.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <image>
+                                    <Image url="@../../../../resources/iconos/editarServidores2.PNG" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="193.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <image>
+                                    <Image url="@../../../../resources/iconos/editarServidores.PNG" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                        <Label fx:id="tutorialEditarServidor" text="Label" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+  </panes>
+</Accordion>
